@@ -19,3 +19,18 @@ header div {
     margin: 10px;
     padding: 10px 30px;
 }
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    border-top: 5px double black;
+    width: 100%;
+}
