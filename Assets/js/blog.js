@@ -5,6 +5,7 @@
 function buildPage() {
     for (let i = 0; i < blogArray.length; i++){
         buildPost(blogArray[i]);
+        console.log(blogArray[i])
     }
 }
 
@@ -28,7 +29,7 @@ function buildPost(post) {
     newPost.appendChild(newContent);
     newPost.appendChild(newUserName);
 
-    newPost.append(document.getElementById("blog-posts"));
+    document.getElementById("blog-posts").appendChild(newPost);
 }
 
 
