@@ -1,10 +1,5 @@
 header  {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    background-color: greenyellow;
-    border-bottom: 5px double black;
 }
 
 header h1{
@@ -22,6 +17,7 @@ header div {
 
 #blog-posts {
     display: block;
+    margin-bottom: 150px;
 }
 
 #blog-posts div {
@@ -31,7 +27,13 @@ header div {
     padding-left: 10px;
 }
 
+#blog-posts div.light{
+    background-color: rgb(192, 191, 191);   
+}
 
+#blog-posts div.dark{
+    background-color: #555454;   
+}
 
 #blog-posts div h3 {
     border-bottom: 3px solid black;
@@ -46,10 +48,6 @@ header div {
     border-top: 2px solid black;
 }
 
-
-
-
-
 footer {
     display: flex;
     flex-direction: column;
@@ -57,4 +55,42 @@ footer {
     bottom: 0;
     border-top: 5px double black;
     width: 100%;
+}
+
+footer.light {
+    background-color: greenyellow;
+    color: black;
+}
+
+footer.dark {
+    background-color: rgb(57, 95, 0);
+    color: white;
+}
+
+footer p {
+    margin-left: 20px;
+}
+
+footer a {
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+footer a.light {
+    background-color: greenyellow;
+    color: black;
+}
+
+footer a.dark {
+    background-color: rgb(57, 95, 0);
+    color: white;
+}
+
+footer a.light:visited {
+    color: black;
+}
+
+footer a.dark:visited {
+    color: white;
 }

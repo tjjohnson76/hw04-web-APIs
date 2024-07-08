@@ -1,16 +1,10 @@
-
-
-
-
 function buildPage() {
     for (let i = 0; i < blogArray.length; i++){
         buildPost(blogArray[i]);
-        console.log(blogArray[i])
+        // console.log(blogArray[i])
     }
 }
 
-
-// Still need to fix
 function buildPost(post) {
     const userName = post.username;
     const title = post.title;
@@ -29,10 +23,14 @@ function buildPost(post) {
     newPost.appendChild(newContent);
     newPost.appendChild(newUserName);
 
+    if (themeSelection === "Light"){
+        newPost.classList.add("light");
+    } else {
+        newPost.classList.add("dark");
+    }
+
     document.getElementById("blog-posts").appendChild(newPost);
 }
-
-
 
 document.getElementById("return-btn").addEventListener("click", function(e) {
     e.preventDefault;

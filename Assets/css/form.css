@@ -1,10 +1,5 @@
 header  {
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
-    height: 100px;
-    background-color: greenyellow;
-    border-bottom: 5px double black;
 }
 
 .viewport {
@@ -48,7 +43,12 @@ header  {
     border-radius: 100%;
     justify-content: center;
     align-items: center;
-    background: rgb(1,255,0);
-    background: linear-gradient(0deg, rgba(1,255,0,1) 0%, rgba(255,231,0,1) 100%);
     font-size: 50px;
+    background: linear-gradient(0deg, rgba(1,255,0,1) 0%, rgba(255,231,0,1) 100%);
+    color: white;
+}
+
+.circle.dark {
+    background: linear-gradient(0deg, rgb(57, 95, 0) 0%, rgba(1,255,0,1) 100%);
+    color: white;
 }
